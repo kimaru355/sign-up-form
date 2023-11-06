@@ -27,11 +27,11 @@
               be submitted, only validation will take place.
             </p>
           </div>
-          <div class="min-h-1/3 p-4 pl-20 md:h-1/3">
+          <div class="min-h-1/3 p-4 pl-20 md:h-1/3 shadow-sm">
             <p class="text-xl font-bold mb-4">Sign Up</p>
             <div class="flex flex-wrap">
               <div class="flex flex-col">
-                <label for="first_name">FIRST NAME</label>
+                <label for="first_name">FIRST NAME <sup>*</sup></label>
                 <input
                   type="text"
                   name="first_name"
@@ -51,7 +51,7 @@
             </div>
             <div class="flex flex-wrap">
               <div class="flex flex-col">
-                <label for="email">EMAIL</label>
+                <label for="email">EMAIL <sup>*</sup></label>
                 <input
                   type="email"
                   name="email"
@@ -71,7 +71,7 @@
             </div>
             <div class="flex flex-wrap">
               <div class="flex flex-col">
-                <label for="password">PASSWORD</label>
+                <label for="password">PASSWORD <sup>*</sup></label>
                 <input
                   type="password"
                   name="password"
@@ -80,7 +80,7 @@
                 />
               </div>
               <div class="flex flex-col">
-                <label for="last_name">CONFIRM PASSWORD</label>
+                <label for="last_name">CONFIRM PASSWORD <sup>*</sup></label>
                 <input
                   type="password"
                   name="confirm_password"
@@ -89,6 +89,7 @@
                 />
               </div>
             </div>
+            <p id="error" class="font-bold"></p>
           </div>
           <div class="p-10 pl-20">
             <button
@@ -105,5 +106,7 @@
       </main>
       <footer></footer>
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
