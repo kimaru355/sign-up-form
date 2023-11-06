@@ -3,10 +3,107 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
+    <title>Sign up</title>
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body>
-    <script src="./script.js"></script>
+    <div id="root">
+      <header></header>
+      <main class="w-full h-screen flex">
+        <div
+          class="max-w-1/3 bg-no-repeat bg-center bg-cover"
+          style="background-image: url('./images/sign-up.jpg')"
+        ></div>
+        <div class="">
+          <div
+            class="text-xl font-semibold min-h-1/3 p-20 bg-slate-300 overflow-auto md:h-1/3"
+          >
+            <p>
+              This is a generic sign up form. You can enter you details and it
+              will be validated
+            </p>
+            <p>
+              The <em>password</em> required will be a strong one. No data will
+              be submitted, only validation will take place.
+            </p>
+          </div>
+          <div class="min-h-1/3 p-4 pl-20 md:h-1/3">
+            <p class="text-xl font-bold mb-4">Sign Up</p>
+            <div class="flex flex-wrap">
+              <div class="flex flex-col">
+                <label for="first_name">FIRST NAME</label>
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  class="mr-10 border border-solid border-slate-600 rounded-md"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="last_name">LAST NAME</label>
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  class="border border-solid border-slate-600 rounded-md"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap">
+              <div class="flex flex-col">
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="mr-10 border border-solid border-slate-600 rounded-md"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="number">PHONE NUMBER</label>
+                <input
+                  type="text"
+                  name="number"
+                  id="number"
+                  class="border border-solid border-slate-600 rounded-md"
+                />
+              </div>
+            </div>
+            <div class="flex flex-wrap">
+              <div class="flex flex-col">
+                <label for="password">PASSWORD</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="mr-10 border border-solid border-slate-600 rounded-md"
+                />
+              </div>
+              <div class="flex flex-col">
+                <label for="last_name">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  name="confirm_password"
+                  id="confirm_password"
+                  class="border border-solid border-slate-600 rounded-md"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="p-10 pl-20">
+            <button
+              type="button"
+              class="p-3 px-10 bg-sky-400 rounded-md text-lg font-extrabold text-slate-100 focus:ring focus:ring-sky-600"
+              onclick="validate()"
+            >
+              Create Account
+            </button>
+            <p class="font-normal">Already have an account?</p>
+            <button>Log in</button>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>
